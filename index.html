@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>人民币大写在线转换工具</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/ChinaNum.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/chinaNum.css" />
+	</head>
+
+	<body>
+		<div class="container  m-auto">
+			<div class="form  row">
+				<div class="col-md-12">
+					<h4 class="form-title ips">人民币大写在线转换工具</h4>
+					<div class="col-md-12">
+						<div class="form-group ips">
+							<i class="fa fa-user fa-lg"></i>
+							<input class="form-control required" id="aa" value="" oninput="return Edit1Change();" placeholder="请输入数组金额..." />
+						</div>
+						<div class="form-group ips">
+							<i class="fa fa-lock fa-lg"></i>
+							<input class="form-control required" id="bb" value="" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				var j = chineseNumber(document.getElementById("aa").value);
+				document.getElementById("bb").value = j;
+
+				function Edit1Change() {
+					document.getElementById("bb").value = chineseNumber(document.getElementById("aa").value);
+				}
+			</script>
+
+	</body>
+
+</html>

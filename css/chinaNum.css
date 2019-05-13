@@ -1,0 +1,24 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background: url(../img/132704.jpg);
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.form {
+	background: rgba(255, 255, 255, 0.6);
+	border-radius:10px;
+	margin: auto;
+	height: 20em;
+}
+.ips{
+	margin: 2.5em 0 0 0;
+	text-align: center;
+}
